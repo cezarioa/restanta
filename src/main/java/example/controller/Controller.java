@@ -41,6 +41,28 @@ public class Controller {
         var sorted = mixService.sortByExperience(astronauts);
         sorted.forEach(System.out::println);
 
+        mixService.writeInFile(Path.of("astronauts_sorted.txt"), sorted);
+
+        System.out.println("=== Mission Events with computed points ===");
+        var eventsWithPoints = mixService.eventsWithComputedPoints(missionEvents);
+        eventsWithPoints.forEach(System.out::println);
+
+        System.out.println("=== Top 5 Astronauts by Total Score ===");
+        var top5 = mixService.top5Ranking(astronauts, missionEvents, supplies);
+        for(int i = 0; i < top5.size(); i++) {
+            var r = top5.get(i);
+            System.out.println((i+1) + ". " + r.astronaut().getName() + " (" + r.astronaut().getSpaceCraft() + ") -> Total Score: " + r.totalScore());
+        }
+        System.out.println("leading spacecraft: " + top5.getFirst().astronaut().getSpaceCraft());
+
+        System.out.println("=== Count by events ===");
+        var countByEvent = mixService.countBy(missionEvents);
+        countByEvent.forEach(c -> System.out.println(c.type() + " -> " + c.count()));
+
+
+
+
+
 
     }
 
