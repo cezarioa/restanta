@@ -1,0 +1,15 @@
+Astronaut{[1]Ava Ionescu | spaceCraft='null | ACTIVEexp=9
+Astronaut{[9]Ioana Rusu | spaceCraft='null | LOSTexp=9
+Astronaut{[11]Bianca Tudor | spaceCraft='null | ACTIVEexp=8
+Astronaut{[7]Clara Neagu | spaceCraft='null | INACTIVEexp=8
+Astronaut{[2]Mihai Petrescu | spaceCraft='null | ACTIVEexp=8
+Astronaut{[10]Daniel Voicu | spaceCraft='null | ACTIVEexp=7
+Astronaut{[3]Elena Pop | spaceCraft='null | INACTIVEexp=7
+Astronaut{[5]Sofia Marin | spaceCraft='null | ACTIVEexp=7
+Astronaut{[14]Teodor Matei | spaceCraft='null | ACTIVEexp=7
+Astronaut{[12]Horia Pascu | spaceCraft='null | INACTIVEexp=6
+Astronaut{[15]Larisa Dobre | spaceCraft='null | ACTIVEexp=6
+Astronaut{[4]Radu Stan | spaceCraft='null | ACTIVEexp=6
+Astronaut{[8]Victor Iliescu | spaceCraft='null | ACTIVEexp=6
+Astronaut{[6]Andrei Dumitru | spaceCraft='null | ACTIVEexp=5
+Astronaut{[13]Nadia Ene | spaceCraft='null | ACTIVEexp=5
