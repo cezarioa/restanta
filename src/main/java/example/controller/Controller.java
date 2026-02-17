@@ -30,6 +30,18 @@ public class Controller {
         System.out.println("Mission Events loaded: " + missionEvents.size());
         System.out.println("Supplies loaded: " + supplies.size());
         astronauts.forEach(System.out::println);
+
+//        System.out.println("Enter spacecraft name:");
+//        String spacecraftName = new Scanner(System.in).nextLine();
+//        var filteredAstronauts = mixService.filterBySpacecraftAndStatus(astronauts, spacecraftName);
+//        System.out.println("Filtered Astronauts:");
+//        filteredAstronauts.forEach(System.out::println);
+
+        System.out.println("Sorted Astronauts:");
+        var sorted = mixService.sortByExperience(astronauts);
+        sorted.forEach(System.out::println);
+
+
     }
 
 
