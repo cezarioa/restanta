@@ -28,7 +28,7 @@ public class Astronaut {
     }
 
     public void setSpaceCraft(String spacecraft) {
-        this.spacecraft = this.spacecraft;
+        this.spacecraft = spacecraft;
     }
 
     public AstronautStatus getStatus() {
@@ -60,10 +60,7 @@ public class Astronaut {
 
     @Override
     public String toString() {
-        return
-                "[" + id +
-                "]" + name + " | " +
-                "spaceCraft='" + spacecraft +
+        return "[" + id + "]" + name + " | " + "spaceCraft='" + spacecraft +
                 " | " + status +
                 "exp=" + experienceLevel;
     }
