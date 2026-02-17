@@ -58,6 +58,7 @@ public class Controller {
         System.out.println("=== Count by events ===");
         var countByEvent = mixService.countBy(missionEvents);
         countByEvent.forEach(c -> System.out.println(c.type() + " -> " + c.count()));
+        mixService.writeInFile2(Path.of("mission_report.txt"), countByEvent);
 
 
 

@@ -7,8 +7,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
-import static java.util.stream.Collectors.toList;
-
 public class MixService {
     public List<Astronaut> filterBySpacecraftAndStatus(List<Astronaut> astronauts, String spacecraft) {
         return astronauts.stream()

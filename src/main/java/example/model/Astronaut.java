@@ -1,8 +1,11 @@
 package example.model;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 public class Astronaut {
     int id;
     String name;
+    @JsonAlias ({ "spaceCraft", "spacecraft", })
     String spacecraft;
     AstronautStatus status;
     int experienceLevel;
@@ -19,16 +22,13 @@ public class Astronaut {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSpaceCraft() {
         return spacecraft;
     }
 
-    public void setSpaceCraft(String spaceCraft) {
-        this.spacecraft = spaceCraft;
+    public void setSpaceCraft(String spacecraft) {
+        this.spacecraft = this.spacecraft;
     }
 
     public AstronautStatus getStatus() {
@@ -50,17 +50,17 @@ public class Astronaut {
     public Astronaut() {
     }
 
-    public Astronaut(int id, String name, String spaceCraft, AstronautStatus status, int expreienceLevel) {
+    public Astronaut(int id, String name, String spacecraft, AstronautStatus status, int expreienceLevel) {
         this.id = id;
         this.name = name;
-        this.spacecraft = spaceCraft;
+        this.spacecraft = spacecraft;
         this.status = status;
         this.experienceLevel = expreienceLevel;
     }
 
     @Override
     public String toString() {
-        return "Astronaut{" +
+        return
                 "[" + id +
                 "]" + name + " | " +
                 "spaceCraft='" + spacecraft +
